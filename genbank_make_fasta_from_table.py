@@ -1,15 +1,19 @@
-#!/panfs/roc/itascasoft/python3/3.4-conda/bin/python3
+#!/bin/python3
 
 # ---------------------------------------------------------------------
-# Create a fasta file
+# Create a fasta file from tab-delimited file
 #
 # By Todd Knutson
-
+# 2017-05-18
+#
 # USAGE:
-# python3 make_fasta_from_tab.py metadata.txt sequence accession definition > meta.fasta
-
-# Where "sequence", "accession", and "definition" are the names in the header row of the "metadata.txt" file,
-# which correspond to the columns of text to be printed.
+# python3 genbank_make_fasta_from_table.py metadata.txt sequence accession definition > meta.fasta
+#
+# Above, "sequence", "accession", and "definition" are the names of the header row in the "metadata.txt" file,
+# which correspond to the columns of text to be printed with each sequence.
+#
+# The contents are printed to STDOUT
+# You can redirect contents using bash > operator.
 # ---------------------------------------------------------------------
 
 import sys

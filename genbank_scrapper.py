@@ -1,20 +1,19 @@
-#!/panfs/roc/itascasoft/python3/3.4-conda/bin/python3
+#!/bin/python3
 
 # ---------------------------------------------------------------------
 # Scrape multi-genbank flat file
 #
 # By Todd Knutson
-# 2016-10-28
+# 2017-05-18
 #
 # Input a GenBank flat file (single text file with multiple records listed)
 # Output relevant information in tab-delimited text format
 #
 # Usage:
-# ./get_genbank_info.py <mutli-genbank.txt>
+# python3 genbank_scrapper.py genbank_file.txt > metadata.txt
 #
 # The contents are printed to STDOUT
-# You can redirect contents using bash > operator. For example:
-# ./get_genbank_info.py mutli-genbank.txt > results.txt
+# You can redirect contents using bash > operator.
 # ---------------------------------------------------------------------
 
 
