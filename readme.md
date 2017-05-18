@@ -33,5 +33,9 @@ python3 genbank_make_fasta_from_table.py metadata.txt sequence accession definit
 
 
 
+## Example Output
+
+See `metadata.txt` and `metadata.fasta` files for example output using the `genbank_file.txt` as initial input file.
+
 
 
