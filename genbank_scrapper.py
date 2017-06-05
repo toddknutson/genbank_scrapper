@@ -186,9 +186,9 @@ with open(genbank_file, 'r') as gb:
 
 	
 # Print results to screen (direct to file using bash >)
-print('accession\tdefinition\tpubmed\tsequence\thost\tsegment\tgene\tserotype\tisolate\tisolation_source\tstrain\tnote\torganism\tcountry\tcollection_year\tcollection_date\tgenbank_date\tjournal\ttaxid\tidentical_to')
+print('accession\tdefinition\tpubmed\thost\tsegment\tgene\tserotype\tisolate\tisolation_source\tstrain\tnote\torganism\tcountry\tcollection_year\tcollection_date\tgenbank_date\tjournal\ttaxid\tidentical_to\tsequence')
 
 for k,v in enumerate(results):
 	curr_list = results[v]
-	print('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (curr_list[0], curr_list[1], curr_list[2], curr_list[3], curr_list[4], curr_list[5], curr_list[6], curr_list[7], curr_list[8], curr_list[9], curr_list[10], curr_list[11], curr_list[12], curr_list[13], curr_list[14], curr_list[15], curr_list[16], curr_list[17], curr_list[18], curr_list[19]))
+	print('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (curr_list[0], curr_list[1], curr_list[2], curr_list[4], curr_list[5], curr_list[6], curr_list[7], curr_list[8], curr_list[9], curr_list[10], curr_list[11], curr_list[12], curr_list[13], curr_list[14], curr_list[15], curr_list[16], curr_list[17], curr_list[18], curr_list[19], curr_list[3]))
 	
